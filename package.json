@@ -1,0 +1,13 @@
+{
+  "name": "vitest-coverage-annotations-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "5.1.2",
+    "vitest": "5.1.2"
+  },
+  "packageManager": "pnpm@12.23.0"
+}

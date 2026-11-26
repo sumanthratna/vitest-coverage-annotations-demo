@@ -1,0 +1,3 @@
+overrides:
+  "@vitest/istanbul-lib-report": https://pkg.pr.new/@vitest/istanbul-lib-report@20bd3a1
+blockExoticSubdeps: false
