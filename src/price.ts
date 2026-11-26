@@ -8,3 +8,7 @@ export function applyDiscount(price: number, percent: number): number {
 export function formatPrice(cents: number, currency = "USD"): string {
   return new Intl.NumberFormat("en-US", { style: "currency", currency }).format(cents / 100);
 }
+
+export function addTax(cents: number, rate: number): number {
+  return Math.round(cents * (1 + rate));
+}
