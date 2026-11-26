@@ -377,7 +377,7 @@ packages:
     engines: {node: '>=22'}
 
   '@vitest/istanbul-lib-report@file:vendor/istanbul-lib-report.tgz':
-    resolution: {integrity: sha512-WK8/zTETiCMr+jwAEBrX+gqnuPP+63+ubHX5kL7CDYfwJIbpDIAQTXXY/u/lKGNBY9ZTwd26HfXhamtPqZ8GCg==, tarball: file:vendor/istanbul-lib-report.tgz}
+    resolution: {integrity: sha512-h5dQkVPOTCK/28Dlja/+cSew7W1S80TXDKJbw1NF7cm2gAv8Ie5Neq70It5u1qAQ1k/dqfv68qqMopxDkpeJXw==, tarball: file:vendor/istanbul-lib-report.tgz}
     version: 2.1.1
     engines: {node: '>=22'}
 
