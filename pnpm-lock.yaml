@@ -182,7 +182,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@vitest/istanbul-lib-report': https://pkg.pr.new/@vitest/istanbul-lib-report@20bd3a1
+  '@vitest/istanbul-lib-report': file:./vendor/istanbul-lib-report.tgz
 
 importers:
 
@@ -376,13 +376,8 @@ packages:
     resolution: {integrity: sha512-pF9nMHHuyQzyEXdkWX3d4wElEKjymfL5TEoofegJn/jK2WjmTLOcJKfJ7/YwYGYdbZf8Ebrt4VDUoBPiTuO9zg==}
     engines: {node: '>=22'}
 
-  '@vitest/istanbul-lib-coverage@https://pkg.pr.new/vitest-dev/istanbuljs/@vitest/istanbul-lib-coverage@20bd3a1':
-    resolution: {integrity: sha512-pF9nMHHuyQzyEXdkWX3d4wElEKjymfL5TEoofegJn/jK2WjmTLOcJKfJ7/YwYGYdbZf8Ebrt4VDUoBPiTuO9zg==, tarball: https://pkg.pr.new/vitest-dev/istanbuljs/@vitest/istanbul-lib-coverage@20bd3a1}
-    version: 2.1.1
-    engines: {node: '>=22'}
-
-  '@vitest/istanbul-lib-report@https://pkg.pr.new/@vitest/istanbul-lib-report@20bd3a1':
-    resolution: {integrity: sha512-tvhf1VGQi9fAvly3qnzccOJz65f6mLI3+zc8FQ8yE9hjlCxwzw+5xVJaqjXux7S6JbFNUf71+DFb5lPbwEeyhA==, tarball: https://pkg.pr.new/@vitest/istanbul-lib-report@20bd3a1}
+  '@vitest/istanbul-lib-report@file:vendor/istanbul-lib-report.tgz':
+    resolution: {integrity: sha512-WK8/zTETiCMr+jwAEBrX+gqnuPP+63+ubHX5kL7CDYfwJIbpDIAQTXXY/u/lKGNBY9ZTwd26HfXhamtPqZ8GCg==, tarball: file:vendor/istanbul-lib-report.tgz}
     version: 2.1.1
     engines: {node: '>=22'}
 
@@ -785,7 +780,7 @@ snapshots:
     dependencies:
       '@bcoe/v8-coverage': 1.0.2
       '@vitest/istanbul-lib-coverage': 2.1.1
-      '@vitest/istanbul-lib-report': https://pkg.pr.new/@vitest/istanbul-lib-report@20bd3a1
+      '@vitest/istanbul-lib-report': file:vendor/istanbul-lib-report.tgz
       ast-v8-to-istanbul: 1.0.8
       magicast: 0.5.5
       obug: 3.0.0
@@ -795,11 +790,9 @@ snapshots:
 
   '@vitest/istanbul-lib-coverage@2.1.1': {}
 
-  '@vitest/istanbul-lib-coverage@https://pkg.pr.new/vitest-dev/istanbuljs/@vitest/istanbul-lib-coverage@20bd3a1': {}
-
-  '@vitest/istanbul-lib-report@https://pkg.pr.new/@vitest/istanbul-lib-report@20bd3a1':
+  '@vitest/istanbul-lib-report@file:vendor/istanbul-lib-report.tgz':
     dependencies:
-      '@vitest/istanbul-lib-coverage': https://pkg.pr.new/vitest-dev/istanbuljs/@vitest/istanbul-lib-coverage@20bd3a1
+      '@vitest/istanbul-lib-coverage': 2.1.1
 
   '@vitest/mocker@5.1.2(vite@8.3.8)':
     dependencies:
